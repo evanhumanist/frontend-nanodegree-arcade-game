@@ -17,5 +17,7 @@ Right - Moves the character right one space
 
 Down - Moves the character down one space
 
+The goal is to move your character all the way up until they reach the water.
+
 ## Contributing
 Feel free to offer suggestions, but no contributing is allowed.
