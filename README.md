@@ -1,6 +1,21 @@
-frontend-nanodegree-arcade-game
-===============================
+# Arcade Game
+This is Project 3 in the Udacity/Google Frontend Nanodegree course. I was lucky enough to be one of the recipients of a scholarship for this course and I'm super excited to work through all the challenges ahead!
 
-Students should use this [rubric](https://review.udacity.com/#!/projects/2696458597/rubric) for self-checking their submission. Make sure the functions you write are **object-oriented** - either class functions (like Player and Enemy) or class prototype functions such as Enemy.prototype.checkCollisions, and that the keyword 'this' is used appropriately within your class and class prototype functions to refer to the object the function is called upon. Also be sure that the **readme.md** file is updated with your instructions on both how to 1. Run and 2. Play your arcade game.
+## Dependencies
+All that is required is a modern Web Browser (Vivaldi, Chrome, Opera, Firefox, Safari, Edge etc...). Several ES6 features are used, but all modern web browsers are compatible.
 
-For detailed instructions on how to get started, check out this [guide](https://docs.google.com/document/d/1v01aScPjSWCCWQLIpFqvg3-vXLH2e8_SZQKC8jNO0Dc/pub?embedded=true).
+## Instructions
+[navigate here](https://evanhumanist.github.io/frontend-nanodegree-arcade-game/index.html)
+
+Move your character with the arrow keys.
+
+Up - Moves the character up one space
+
+Left - Moves the character left one space
+
+Right - Moves the character right one space
+
+Down - Moves the character down one space
+
+## Contributing
+Feel free to offer suggestions, but no contributing is allowed.
