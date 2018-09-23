@@ -27,9 +27,8 @@ class Enemy {
         } else {
             this.x = this.x + (this.randomSpeed * dt);
         }
-        if (player.x >= this.x -45 && player.x <= (this.x + 60) && player.y >= this.y - 14 && player.y <= (this.y + 68)) {
-            console.log(this.x, this.y);
-            console.log(player.x, player.y);
+        if (player.x >= this.x -45 && player.x <= (this.x + 60) &&
+            player.y >= this.y - 14 && player.y <= (this.y + 68)) {
             player.restartPlayer();
         }
     }
@@ -89,15 +88,15 @@ class Player {
 
     //restart player position
     restartPlayer() {
-        player.x = 202;
-        player.y = 380;
+        this.x = 202;
+        this.y = 380;
     }
 }
 
 // Now instantiate your objects.
 // Place all enemy objects in an array called allEnemies
 // Place the player object in a variable called player
-let allEnemies = []
+let allEnemies = [];
 for (let i = 0; i < 5; i++){
     let startXLocation = Math.floor(Math.random() * 505);
     let startYLocation = (Math.ceil(Math.random() * 3) * 83) - 23;
@@ -109,19 +108,19 @@ const player = new Player();
 // This listens for key presses and sends the keys to your
 // Player.handleInput() method. You don't need to modify this.
 document.addEventListener('keyup', function(e) {
-    var allowedKeys = {
+    const ALLOWED_KEYS = {
         37: 'left',
         38: 'up',
         39: 'right',
         40: 'down'
     };
 
-    player.handleInput(allowedKeys[e.keyCode]);
+    player.handleInput(ALLOWED_KEYS[e.keyCode]);
 });
 
 //Event Listener for restarting the game after winning
 WIN_BUTTON.addEventListener('click', function() {
-    player.restartPlayer()
+    player.restartPlayer();
     CANVAS.classList.toggle('hide');
     WIN_CONTENT.classList.toggle('hide');
 });
