@@ -1,3 +1,4 @@
+'use strict';
 const WIN_CONTENT = document.querySelector('.win'); //Targets the Win section
 const CANVAS = document.querySelector('.mainCanvas');
 const WIN_BUTTON = document.querySelector('.win-button');
